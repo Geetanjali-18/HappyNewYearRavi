@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confetti Effect
+    </title>
+<link rel="stylesheet" href="css.css">
+</head>
+<body >
+
+     <div class="container">
+        <p>HAPPY NEW YEAR </p>
+    </div> 
+    <div class="name">
+        <p>RAVI</p>
+    </div> 
+   
+   <img class="img1" src="Ravi.jpeg"   alt="not">
+   
+   
+    <div class="btn">
+        <p>HEY... let's  celebrate</p>
+    </div>
+    <script>
+        var ele=document.querySelector('.btn');
+        ele.addEventListener('click',function(){
+
+            $('.img1').fadeToggle(1000);
+           
+            $('.name').fadeToggle(1000);
+            $('.container').fadeToggle(1000);
+            setTimeout(function(){
+                startConfetti();
+            },9000);
+            startConfetti();
+        })
+
+        let btn= document.querySelector('.btn');
+       
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="confetti.js"></script>
+</body>
+</html>
